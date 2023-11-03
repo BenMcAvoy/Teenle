@@ -4,10 +4,10 @@ use structopt::StructOpt;
 #[structopt(name = "teenle")]
 pub struct Config {
     #[structopt(short, long, default_value="localhost")]
-    pub source: String,
+    pub local: String,
 
     #[structopt(short, long)]
-    pub target: String,
+    pub remote: String,
 
     #[structopt(short, long, default_value="8080")]
     pub source_port: String,
